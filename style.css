@@ -1,0 +1,388 @@
+*{box-sizing: border-box;
+    border: 0;
+    margin: 0;    
+}
+body{
+    
+    background: url(bg-desktop.jpg) no-repeat top center/cover;
+    
+}
+
+body.light{
+    background: url(bg-desktop-light.jpg) no-repeat top center/cover;
+}
+#container {
+    
+
+ width: 90%;
+ height: 95vh;
+ margin: auto;
+ margin-top: 5vh;
+}
+
+#profile{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#foto{
+    height: 14vh;
+    border-radius: 5em;
+    border: magenta solid;
+}
+
+#foto.light{
+    border: rgb(15, 15, 80) solid;
+
+}
+
+#eu{
+    color: magenta;
+    font-size: 3vh;
+}
+
+#eu.light{
+    color: purple;
+}
+
+#btnSlide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: white url(moon-stars.svg) no-repeat center;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    background: white url(sun.svg) no-repeat center; /* Alteração aqui */
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 8vh auto;
+}
+#link{
+    font-size: 3vh;
+    color: rgb(108, 223, 243);
+    text-decoration: inherit;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    height: 5vh;
+    margin: 2.5vh;
+    background: purple;
+    border: magenta solid 0.3vh;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#link.light{
+    background: magenta;
+    border: purple solid 0.3vh;
+    color: blue;
+}
+
+#link svg{
+    opacity: 0;
+    fill: rgb(108, 223, 243);
+    transition: 1s;
+    margin: 2vw;
+    height: 1.5vh;
+}
+
+#link.light svg{
+    fill: blue;
+}
+
+
+
+#link:hover svg{
+    opacity: 1;
+    fill: rgb(240, 228, 61);
+}
+#link.light:hover svg{
+    opacity: 1;
+    fill: rgb(204, 71, 10);
+}
+#link:hover{
+    scale: 1.1;
+    color: rgb(240, 228, 61);
+    border: rgb(108, 223, 243) solid 0.3vh;
+    background: rgba(96, 185, 207, 0.322);
+}
+#link.light:hover{
+    color: rgb(204, 71, 10);
+    border: blue;
+    background: rgba(0, 153, 255, 0.575);
+}
+
+#link1{
+    font-size: 3vh;
+    color: rgb(108, 223, 243);
+    text-decoration: inherit;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    height: 5vh;
+    margin: 2.5vh;
+    background: purple;
+    border: magenta solid 0.3vh;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#link1.light{
+    background: magenta;
+    border: purple solid 0.3vh;
+    color: blue;
+}
+
+#link1 svg{
+    opacity: 0;
+    fill: rgb(108, 223, 243);
+    transition: 1s;
+    margin: 2vw;
+    height: 1.5vh;
+}
+
+#link1.light svg{
+    fill: blue;
+}
+
+
+
+#link1:hover svg{
+    opacity: 1;
+    fill: rgb(240, 228, 61);
+}
+#link1.light:hover svg{
+    opacity: 1;
+    fill: rgb(204, 71, 10);
+}
+#link1:hover{
+    scale: 1.1;
+    color: rgb(240, 228, 61);
+    border: rgb(108, 223, 243) solid 0.3vh;
+    background: rgba(96, 185, 207, 0.322);
+}
+#link1.light:hover{
+    color: rgb(204, 71, 10);
+    border: blue;
+    background: rgba(0, 153, 255, 0.575);
+}
+
+
+#link2{
+    font-size: 3vh;
+    color: rgb(108, 223, 243);
+    text-decoration: inherit;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    height: 5vh;
+    margin: 2.5vh;
+    background: purple;
+    border: magenta solid 0.3vh;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#link2.light{
+    background: magenta;
+    border: purple solid 0.3vh;
+    color: blue;
+}
+
+#link2 svg{
+    opacity: 0;
+    fill: rgb(108, 223, 243);
+    transition: 1s;
+    margin: 2vw;
+    height: 1.5vh;
+}
+
+#link2.light svg{
+    fill: blue;
+}
+
+
+
+#link2:hover svg{
+    opacity: 1;
+    fill: rgb(240, 228, 61);
+}
+#link2.light:hover svg{
+    opacity: 1;
+    fill: rgb(204, 71, 10);
+}
+#link2:hover{
+    scale: 1.1;
+    color: rgb(240, 228, 61);
+    border: rgb(108, 223, 243) solid 0.3vh;
+    background: rgba(96, 185, 207, 0.322);
+}
+#link2.light:hover{
+    color: rgb(204, 71, 10);
+    border: blue;
+    background: rgba(0, 153, 255, 0.575);
+}
+#icones{
+    margin-top: 7vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon{
+    fill: white;
+    opacity: 0.6;
+    text-decoration: none;
+    height: 5vh;
+    transition: 0.2s;
+    margin: 0 1vw;
+}
+#icon.light{
+    fill: black;
+}
+#icon:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+#a{
+    height: 5vh;
+}
+
+#icon1{
+    fill: white;
+    opacity: 0.6;
+    text-decoration: none;
+    height: 5vh;
+    transition: 0.2s;
+    margin: 0 1vw;
+}
+#icon1.light{
+    fill: black;
+}
+#icon1:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+#icon2{
+    fill: white;
+    opacity: 0.6;
+    text-decoration: none;
+    height: 5vh;
+    transition: 0.2s;
+    margin: 0 1vw;
+}
+#icon2.light{
+    fill: black;
+}
+#icon2:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+#icon3{
+    fill: white;
+    opacity: 0.6;
+    text-decoration: none;
+    height: 5vh;
+    transition: 0.2s;
+    margin: 0 1vw;
+}
+#icon3.light{
+    fill: black;
+}
+#icon3:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+#pé{
+    color: white;
+    font-size: 2.3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+#pé.light{
+    color: black;
+}
