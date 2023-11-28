@@ -386,3 +386,45 @@ input:focus + .slider {
 #pé.light{
     color: black;
 }
+
+@media (max-width: 580px)
+{
+    body{
+    
+        background: url(bg-mobile.jpg) no-repeat top center/cover;
+        
+    }
+    
+    body.light{
+        background: url(bg-mobile-light.jpg) no-repeat top center/cover;
+    }
+
+    #itens{    
+        width: 40%;
+        
+    }
+    
+    #link:hover svg{
+        opacity: 0;
+    }
+    
+    #link1:hover svg{
+        opacity: 0;
+    }
+    
+    #link2:hover svg{
+        opacity: 0;
+    }
+
+    #link.light:hover svg{
+        opacity: 0;
+    }
+
+    #link1.light:hover svg{
+        opacity: 0;
+    }
+
+    #link2.light:hover svg{
+        opacity: 0;
+    }
+}
